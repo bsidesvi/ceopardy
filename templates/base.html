@@ -5,8 +5,8 @@
     {# bootstrap meta tags #}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--<link rel="stylesheet" href="/static/vendor/bootstrap/dist/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="/static/custom.css">
     <title>{% block title %}{% endblock %} - Hacker Jeopardy</title>
     {% block style %}{% endblock %}
@@ -17,11 +17,8 @@
 
     <div id="content">{% block content %}{% endblock %}</div>
 
-    {# jQuery first, then Tether, then Bootstrap JS. #}
-    <script type="text/javascript" src="/static/vendor/jquery/dist/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="/static/vendor/tether/dist/js/tether.min.js"></script>
-    <script type="text/javascript" src="/static/vendor/bootstrap/dist/js/bootstrap.min.js"></script>-->
-    <script type="text/javascript" src="/static/vendor/socket.io-client/dist/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
 
     {% block ui %}{% endblock %}
 </body>
